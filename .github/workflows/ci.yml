@@ -27,7 +27,7 @@ jobs:
           poetry install --no-interaction --no-root
 
       - name: Run ruff
-        run: poetry run ruff .
+        run: poetry run ruff check.
 
       - name: Run black (check only)
         run: poetry run black . --check
